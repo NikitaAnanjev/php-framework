@@ -2,8 +2,6 @@
 /**
  * Created by PhpStorm.
  * User: Nikita A
- * Date: 12/04/2019
- * Time: 19:40
+ * Date: 14/04/2019
+ * Time: 01:23
  */
-
-echo "lol";

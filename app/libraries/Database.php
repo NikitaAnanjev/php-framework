@@ -1,8 +1,37 @@
 <?php
+
 /**
- * Created by PhpStorm.
- * User: Nikita A
- * Date: 14/04/2019
- * model will use this file
- * Time: 01:22
+ * PDO DATABASE Class
+ * Connect to Database
+ * Create prepared statements
+ * bind values return rows and results
  */
+class Database {
+
+    private $host = DB_HOST;
+    private $user = DB_USER;
+    private $pass = DB_PASS;
+    private $dbname = DB_NAME;
+
+    private $dbh;
+    private $stmt;
+    private  $error;
+    public function __construct()
+    {
+
+//    SET DSN
+
+
+        $dsn = 'mysql:host=' . $this->host . ';dbname=' . $this->dbname;
+
+        $options = array(
+            PDO::ATTR_PERSISTENT => true,
+            PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
+
+
+        );
+
+    }
+
+
+}
